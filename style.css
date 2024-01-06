@@ -25,7 +25,9 @@ body{
     border: none;
     font-size: 20px;
     padding: 15px 30px;
-
+}
+.btn-primary>i{
+    margin-right: 10px;
 }
 .section-title{
     text-align: center;
@@ -43,7 +45,7 @@ body{
 
 }
 
-/* nac related style */
+/* nav related style */
 nav{
     display: flex;
     align-items: center;
@@ -70,10 +72,10 @@ li a{
 header{
     /* height: 100vh; */
     background: #FFF8F3;
-    background-image: url("images/header_bg.png");
+    background-image: url("images/header_bg.png"), url("images/developer.png");
     background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: 700px;
+    background-position: bottom right, top left;
+    background-size: 700px, 80px;
 }
 .banner{
     padding: 30px 30px 0px 150px;
@@ -118,7 +120,7 @@ main{
         border-radius: 10px;
         background: #FFF8F3;
         padding: 100px 50px;
-        box-shadow: 1px 1px 10px;
+        box-shadow: 10px 0px 10px blue;
     }
     .about-info-container{
         display: flex;
@@ -158,6 +160,81 @@ line-height: 28px; /* 175% */
 }
 
 /* Resume style start */
-    .Resume{
+    .resume{
         margin: 70px 0px;
+    }
+    .resume-title{
+        margin-top: 100px;
+    }
+    .resume-container{
+        display: flex;
+        gap: 20px;
+    }
+    .resume-item{
+        margin-top: 30px;
+    }
+    .resume-column>h3{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--Dark-02, #474747);
+    }
+    .resume-column>hr{
+        margin-top: 10px;
+    }
+    .resume-item-title{
+        color: var(--Dark-02, #474747);
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .resume-item-institute{
+        color: var(--Dark-03, #757575);
+        font-size: 20px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    .resume-item-des{
+        color: var(--Dark-03, #757575);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px; /* 175% */
+    }
+    
+    .resume-btn-downlood{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* footer style start */
+    footer{
+        display: flex;
+        background: #FFF8F3;
+        padding: 50px 230px;
+        gap: 40px;
+    }
+    .btn-coloumn{
+        width: 50%;
+    }
+    .btn-coloumn>input,textarea{
+        display: block;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 12px 10px;
+        border-radius: 5px;
+        background: var(--White-Color, #FFF);
+        margin: 10px 0px;
+        border: none;
+    }
+    .f-title{
+        color: var(--Dark-01, #181818);
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .footer-icon{
+        margin-top: 30px;
+        display: flex;
+        gap: 20px;
     }
